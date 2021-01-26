@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Notice</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="CSS/NoticeStyle.css">
+</head>
+<header class="headerbody ">
+	<img src="Media/logo.jpg" alt="collegelogo" height="80" width="100">
+	<div class="text">
+		<h2><span>C</span>OLLEGE <span>O</span>F <span>B</span>USSINESS <span>A</span>ND <span>S</span>OCIAL <span>S</span>TUDIES </h2>
+	</div>
+	</div>
+</header>
+<body>
+	<ul>
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="About.html">About</a></li>
+		<li><a href="Programs.html">Programs</a></li>
+		<li><a href="Notice.html">Notice</a></li>
+		<li><a href="Gallery.html">Gallery</a></li>
+		<li><a href="Contact.html">Contact Us</a></li>
+	</ul>	
+<body>
+
+	<section class="section1">
+		
+		<!-- Optional: some overlay text to describe the video -->
+		<div class="content">
+  			<h1>ADMISSION OPEN</h1>
+  			<p>Hurry up * Admission Open *<br>
+			One of the Reputed Institutions in the Eastern part of Nepal, Biratnagar.<br>
+			For the Academic year 2077<br>
+			Science, Management, and Computer science.<br>
+			Scholarship Available.<br>
+			<a href="https://surveyheart.com/form/5f66b16e24b8842d111164e8?fbclid=IwAR2sxUxNgZfWLq5liIA-t_V9usFRdDVqZ1KORFGRK3GxHe5hj7op4STvCA8#welcome">Fill up the Form for More Detail</a> </p>
+  			<!-- Use a button to pause/play the video with JavaScript -->
+  			<button id="myBtn" onclick="myFunction()">Pause</button><br><br>
+			<!-- The video -->
+			<video autoplay muted loop id="myVideo">
+  			<source src="Media/video1.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		
+	</section>
+
+	<section class="section2">
+		<h2>Blood Donation Program By Lions/Leo Club of Biratnagar City.</h2>
+		<h3>Date: July 9, 2020</h3>
+		<div class="img1">
+			<img src="Media/q.jpg" alt="image1" height="400" width="850">
+		</div>
+
+		<div class="img2">
+			<img src="Media/r.jpg" alt="image2" height="400" width="450">
+		</div>
+
+		<div class="img3">
+			<img src="Media/o.jpg" alt="image3" height="500" width="650">
+		</div>
+
+		<div class="img4">
+			<img src="Media/p.jpg" alt="image4" height="500" width="650">
+		</div>
+	</section>
+
+<footer class="footerbody"><!--Footer-->
+
+	<div class="footerleft">
+
+		<h3>COBASS <span>COLLEGE</span></h3>
+
+		<p class="footername">Hemaraj Dhakal and Cobass College &copy; 2020</p>
+
+	</div>
+
+	<div class="footerright">
+
+		<p>Contact Us</p><br>
+		<p> Email:collegecobass@gmail.com</p><br>
+		<p> Phone number:021-538724 </p><br>
+		<div class="icon"><i class="fa fa-facebook-official" aria-hidden="true"></i></div> <a href="https://www.facebook.com/COBASSHSS">Facebook </a>
+		
+	</div>
+
+</footer>
+
+
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+</body>
+</html>
