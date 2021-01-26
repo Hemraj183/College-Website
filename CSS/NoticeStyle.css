@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	font-family: 'Poppins',sans-serif;
+
+}
+.headerbody{
+	display: flex;
+	flex-direction: column;
+	background-color:#000000;
+}
+.headerbody img{
+	min-width: 50px;
+	height: 80px;
+	width: 80px;
+	background: #fff;
+	display: flex; 
+	border-radius: 10%;
+	font-size: 22px;
+	margin-left: 50px;
+}
+.headerbody .text h2{
+	margin-top: -70px;
+	margin-left:150px;
+	font-size: 3em;
+	font-weight: 900;
+	color: #fff;
+	z-index: 1;
+	overflow: hidden;
+	animation: type 4s steps(50);
+	white-space: nowrap;
+	border-right: 4px solid;
+}
+@keyframes type{
+	0%{
+		width: 0ch;
+	}
+	100%{
+		width: 35ch;
+	}
+}
+
+h2 span
+{
+	color: #ff022c;
+}
+
+ul
+{
+	display: flex;
+	margin:10px;
+}
+ul li{
+	list-style: none;
+}
+ul li a{
+	position: relative;
+	display: block;
+	padding: 20px 30px;
+	text-align: center;
+	font-size: 16px;
+	color: #262626;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: 0.5s; 
+
+}
+ul li a:before{
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 2px;
+	background: #262626;
+	z-index: -1;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform .5s;
+}
+ul li a:hover:before{
+	transform: scaleX(1);
+	transform-origin: right;
+}
+ul li a:after{
+	content: '';
+	position: absolute;
+	bottom:0;
+	right:0;
+	width: 100%;
+	height: 2px;
+	background: #262626;
+	z-index: -1;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform .5s;
+}
+ul li a:hover:after{
+	transform: scaleX(1);
+	transform-origin: right;
+}
+
+.section1{
+	margin:0;
+	padding: 0;
+	background: #cccccc;
+	height: 122vh;
+}
+/* Add some content at the bottom of the video/page */
+.section1 .content {
+  margin-top:10px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  line-height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+
+}
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+
+.section1 .content h1{
+	color: red;
+	size: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+
+}
+.section2{
+	margin: 0;
+	padding: 0;
+	height: 150vh;
+	background: #ffd9b3;
+}
+
+.section2 h2{
+	size: 4em;
+	color:#003366;
+	text-align: center;
+
+}
+.section2 h3{
+	size: 2em;
+	color:#003366;
+	text-align: center;
+}
+.section2 .img1{
+	margin-top: 50px;
+	margin-left: 50px;
+
+}
+.section2 .img2{
+	margin-top: -407px;
+	margin-left: 1000px;
+
+}
+.section2 .img3{
+	margin-top: 50px;
+	margin-left: 50px;
+
+}
+.section2 .img4{
+	margin-top: -510px;
+	margin-left: 800px;
+
+}
+.footerbody{
+	background: #C0C0C0;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	height: 200px;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+/* Footer left */
+
+.footerbody .footerleft{
+	float: left;
+}
+
+/* name css */
+
+.footerbody h3{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin-bottom:0;
+}
+
+.footerbody h3 span{
+	color:  #5383d3;
+}
+/* Footer Right */
+
+.footerbody .footerright{
+	float: right;
+}
+
+.footerbody .footerright p{
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 0;
+	color: #ffffff;
+}
+

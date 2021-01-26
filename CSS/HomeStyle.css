@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	font-family: 'Poppins',sans-serif;
+
+}
+.headerbody{
+	display: flex;
+	flex-direction: column;
+	background-color:#000000;
+}
+.headerbody img{
+	min-width: 50px;
+	height: 80px;
+	width: 80px;
+	background: #fff;
+	display: flex; 
+	border-radius: 10%;
+	font-size: 22px;
+	margin-left: 50px;
+}
+.headerbody .text h2{
+	margin-top: -70px;
+	margin-left:150px;
+	font-size: 3em;
+	font-weight: 900;
+	color: #fff;
+	z-index: 1;
+	overflow: hidden;
+	animation: type 4s steps(50);
+	white-space: nowrap;
+	border-right: 4px solid;
+}
+@keyframes type{
+	0%{
+		width: 0ch;
+	}
+	100%{
+		width: 35ch;
+	}
+}
+
+h2 span
+{
+	color: #ff022c;
+}
+
+ul
+{
+	display: flex;
+	margin:10px;
+}
+ul li{
+	list-style: none;
+}
+ul li a{
+	position: relative;
+	display: block;
+	padding: 20px 30px;
+	text-align: center;
+	font-size: 16px;
+	color: #262626;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: 0.5s; 
+
+}
+ul li a:before{
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 2px;
+	background: #262626;
+	z-index: -1;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform .5s;
+}
+ul li a:hover:before{
+	transform: scaleX(1);
+	transform-origin: right;
+}
+ul li a:after{
+	content: '';
+	position: absolute;
+	bottom:0;
+	right:0;
+	width: 100%;
+	height: 2px;
+	background: #262626;
+	z-index: -1;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform .5s;
+}
+ul li a:hover:after{
+	transform: scaleX(1);
+	transform-origin: right;
+}
+
+.img_slides{
+	padding: 0;
+	margin: 0;
+	height: 96vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+.slider{
+	width: 800px;
+	height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+
+}
+
+.slides{
+	width: 800%;
+	height: 500px;
+	display: flex;
+
+}
+.slides input{
+	display: none;
+
+}
+.slide{
+	width: 20%;
+	transition: 2s;
+}
+.slide img{
+	width: 800px;
+	height: 500px;
+}
+
+.navigation_manual{
+	position: absolute;
+	width: 800px;
+	margin-top: 450px;
+	display: flex;
+	justify-content: center;
+
+}
+.manual_btn{
+	border: 2px solid #40D3DC;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+
+}
+.manual_btn:not(:last-child){
+	margin-right: 40px;
+
+}
+.manual_btn:hover{
+	background: #40D3DC;
+}
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+#radio2:checked ~ .first{
+	margin-left: -20%;
+}
+#radio3:checked ~ .first{
+	margin-left: -40%;
+}
+#radio4:checked ~ .first{
+	margin-left: -60%;
+}
+#radio5:checked ~ .first{
+	margin-left: -80%;
+}
+.navigation_auto{
+	position: absolute;
+	display: flex;
+	width: 800px;
+	justify-content: center;
+	margin-top: -32.5px;
+}
+.navigation_auto div{
+	border: 2px solid #40D3DC;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+.navigation_auto div:not(:last-child){
+	margin-right: 40px;
+
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+	background: #40D3DC;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background: #40D3DC;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background: #40D3DC;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+	background: #40D3DC;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+	background: #40D3DC;
+}
+
+.description{
+	display: flex;
+	padding: 0;
+	margin: 0;
+	height: 630px;
+	background: #00FFFF;
+}
+.message1{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+.message2{
+	margin-left: 50px;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+
+}
+
+.footerbody{
+	background: #C0C0C0;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+/* Footer left */
+
+.footerbody .footerleft{
+	float: left;
+}
+
+/* name css */
+
+.footerbody h3{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin-bottom:0;
+}
+
+.footerbody h3 span{
+	color:  #5383d3;
+}
+/* Footer Right */
+
+.footerbody .footerright{
+	float: right;
+}
+
+.footerbody .footerright p{
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 0;
+	color: #ffffff;
+}
+

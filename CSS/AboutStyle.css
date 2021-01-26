@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	font-family: 'Poppins',sans-serif;
+
+}
+.headerbody{
+	display: flex;
+	flex-direction: column;
+	background-color:#000000;
+}
+.headerbody img{
+	min-width: 50px;
+	height: 80px;
+	width: 80px;
+	background: #fff;
+	display: flex; 
+	border-radius: 10%;
+	font-size: 22px;
+	margin-left: 50px;
+}
+.headerbody .text h2{
+	margin-top: -70px;
+	margin-left:150px;
+	font-size: 3em;
+	font-weight: 900;
+	color: #fff;
+	z-index: 1;
+	overflow: hidden;
+	animation: type 4s steps(50);
+	white-space: nowrap;
+	border-right: 4px solid;
+}
+@keyframes type{
+	0%{
+		width: 0ch;
+	}
+	100%{
+		width: 35ch;
+	}
+}
+
+h2 span
+{
+	color: #ff022c;
+}
+
+ul
+{
+	display: flex;
+	margin:10px;
+}
+ul li{
+	list-style: none;
+}
+ul li a{
+	position: relative;
+	display: block;
+	padding: 20px 30px;
+	text-align: center;
+	font-size: 16px;
+	color: #262626;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: 0.5s; 
+
+}
+ul li a:before{
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 2px;
+	background: #262626;
+	z-index: -1;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform .5s;
+}
+ul li a:hover:before{
+	transform: scaleX(1);
+	transform-origin: right;
+}
+ul li a:after{
+	content: '';
+	position: absolute;
+	bottom:0;
+	right:0;
+	width: 100%;
+	height: 2px;
+	background: #262626;
+	z-index: -1;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform .5s;
+}
+ul li a:hover:after{
+	transform: scaleX(1);
+	transform-origin: right;
+}
+.section1{
+	padding: 0;
+	margin: 0;
+	height: 94.5vh;
+	background: #3D9970
+}
+.section1 .text h2{
+	margin-top: -600px;
+	margin-left: 800px;
+	text-indent: center;
+	font-size: 4em;
+	font-family: sans-serif;
+	overflow: hidden;
+	color: transparent;
+	-webkit-text-stroke: 2px #ff3300;
+}
+.section1 .photo1{
+	margin-left: 20px;
+	overflow: hidden;
+}
+.section1 .photo2{
+	margin-top:5px;
+	margin-left: 640px;
+	overflow: hidden;
+
+}
+.section2{
+	padding: 0;
+	margin: 0;
+	height: 60vh;
+	background: #cc99ff;
+}
+.section2 h2{
+	text-align: center;
+	font-size: 50px;
+	color: transparent;
+	-webkit-text-stroke: 2px #cc3300;
+
+}
+.section2 .list li{
+	font-size: 20px;
+	color: white;
+	list-style: none;
+	line-height: 40px;
+}
+.section2 .list li::before{
+	font-family: FontAwesome;
+	content: " \f00c";
+	color: black;
+}
+.section3{
+	padding: 0;
+	margin: 0;
+	height: 60vh;
+	background: #8080ff;
+}
+.section3 h2{
+	text-align: center;
+	font-size: 50px;
+	color: transparent;
+	-webkit-text-stroke: 2px #ff0000;
+
+}
+.section3 p{
+	color: white;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-right: 5px; 
+}
+.section3 .list li{
+	margin-top: 10px;
+	font-size: 20px;
+	color: white;
+	list-style: none;
+	line-height: 40px;
+}
+.section3 .list li::before{
+	font-family: FontAwesome;
+	content: " \f00c";
+	color: black;
+}
+.section4{
+	padding: 0;
+	margin: 0;
+	height: 60vh;
+	background: #cc99ff;
+}
+.section4 h2{
+	text-align: center;
+	font-size: 50px;
+	color: transparent;
+	-webkit-text-stroke: 2px #cc3300;
+
+}
+.section4 .list li{
+	font-size: 20px;
+	color: white;
+	list-style: none;
+	line-height: 40px;
+}
+.section4 .list li::before{
+	font-family: FontAwesome;
+	content: " \f00c";
+	color: black;
+}
+.section5{
+	padding: 0;
+	margin: 0;
+	height: 115vh;
+	background: #8080ff;
+}
+.section5 img{
+	margin-left: 300px;
+
+}
+
+
+.footerbody{
+	background: #C0C0C0;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	height: 200px;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+/* Footer left */
+
+.footerbody .footerleft{
+	float: left;
+}
+
+/* name css */
+
+.footerbody h3{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin-bottom:0;
+}
+
+.footerbody h3 span{
+	color:  #5383d3;
+}
+/* Footer Right */
+
+.footerbody .footerright{
+	float: right;
+}
+
+.footerbody .footerright p{
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 0;
+	color: #ffffff;
+}
+
